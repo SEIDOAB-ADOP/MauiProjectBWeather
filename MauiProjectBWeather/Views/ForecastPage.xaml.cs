@@ -47,8 +47,9 @@ namespace MauiProjectBWeather.Views
         {
             Forecast forecast = await service.GetForecastAsync(city.Name);
 
-            //Here Group your forecast and bind it to your
-            //ListView ItemSource
+            groupedforecast = new GroupedForecast() { City = city.Name, Items = forecast.Items.GroupBy(x => x.DateTime.Date) };
+            GroupedForecast.ItemsSource = groupedforecast.Items;
+
         }
     }
 }
