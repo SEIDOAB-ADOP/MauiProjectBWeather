@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET MAUI - macCatalyst",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-maccatalyst",
+      "program": "${workspaceFolder}/MauiProjectBWeather/bin/Debug/net9.0-maccatalyst/maccatalyst-arm64/MauiProjectBWeather.app/Contents/MacOS/MauiProjectBWeather",
+      "args": [],
+      "cwd": "${workspaceFolder}/MauiProjectBWeather",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": ".NET MAUI - win-arm64",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-windows-arm64",
+      "program": "${workspaceFolder}/MauiProjectBWeather/bin/Debug/net9.0-windows10.0.19041.0/win10-arm64/MauiProjectBWeather.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/MauiProjectBWeather",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    },
+    {
+      "name": ".NET MAUI - win-x64",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-windows-x64",
+      "program": "${workspaceFolder}/MauiProjectBWeather/bin/Debug/net9.0-windows10.0.19041.0/win10-x64/MauiProjectBWeather.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}/MauiProjectBWeather",
+      "stopAtEntry": false,
+      "console": "internalConsole"
+    }
+  ]
+}
